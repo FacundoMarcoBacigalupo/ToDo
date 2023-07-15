@@ -1,0 +1,24 @@
+.efectLogo{
+    width: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.efectLogo:hover{
+    filter: drop-shadow(0px 2px 3px #696969);
+    transition: all .8s;
+}
+
+.efectLogo:active{
+    scale: .8;
+    transition: all .8s;
+}
+
+
+.efect{
+    color: rgb(184, 184, 184);
+}
+.efect:hover{
+    filter: drop-shadow(0px 2px 3px #696969);
+    transition: all .8s;
+}

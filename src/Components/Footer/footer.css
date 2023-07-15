@@ -1,0 +1,40 @@
+.containerFooter{
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.containerFooter img{
+    height: 50px;
+    width: 50px;
+}
+
+.containerFooter img:hover{
+    filter: drop-shadow(0px 2px 3px #696969);
+    transition: all .8s;
+}
+
+
+
+.motivation{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.motivation:hover{
+    filter: drop-shadow(0px 2px 3px #000000);
+    transition: all .8s;
+}
+
+
+.copyright{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.copyright:hover{
+    filter: drop-shadow(0px 2px 3px #000000);
+    transition: all .8s;
+}
