@@ -32,17 +32,17 @@ const TaskVisibilityControl = ({ showCompleted, callback, description, cleanTask
     return (
         <section style={{backgroundColor:"rgba(49, 49, 49, 0.25)"}} className='d-flex justify-content-between text-center p-2'>
             <div className='form-check form-switch'>
-                <input 
-                    style={{cursor:"pointer", transition:"all .5s", width:"50px", height:"20px"}}
+                <input
+                    id='styleCheck'
                     type='checkbox'
                     className='form-check-input'
                     checked={showCompleted}
                     onChange={event => callback(event.target.checked)}  
                 />
-                <label style={{ fontSize:"18px", fontWeight:"bold"}} htmlFor="form-check-label">Show {description}</label>
+                <label style={{ fontSize:"18px", fontWeight:"bold", marginTop:"5px"}} htmlFor="form-check-label">Show {description}</label>
             </div>
 
-            <button style={{backgroundColor:"rgb(122, 3, 3)", color:"rgb(12, 12, 12)", fontSize:"18px", fontWeight:"bold"}} className='btn btn-sm' onClick={handleDelete}>
+            <button id='styleClear' className='btn btn-sm' onClick={handleDelete}>
                 Clear
             </button>
         </section>

@@ -15,7 +15,6 @@ const TaskTable = ({ taskItems, toggleTask, showCompleted = false }) => {
 
     return (
         <div>
-            <span style={{fontSize:"18px", fontWeight:"bold", margin:"auto"}}>Task</span>
             <ul className="ulToDo">{ taskTableRows(showCompleted) }</ul>
         </div>
     )

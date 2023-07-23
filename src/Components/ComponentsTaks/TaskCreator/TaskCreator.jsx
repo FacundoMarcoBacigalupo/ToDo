@@ -7,6 +7,7 @@ const TaskCreator = ({ createNewTask }) => {
 
 
     const handleSubmit = (event) =>{
+        event.preventDefault()
         if(newTaskName.trim() === ""){
             Swal.fire({
                 position: 'center',
@@ -17,7 +18,6 @@ const TaskCreator = ({ createNewTask }) => {
             })
             return
         }
-        event.preventDefault()
         createNewTask(newTaskName)
         setNewTaskName("")
     }
@@ -36,7 +36,7 @@ const TaskCreator = ({ createNewTask }) => {
                 />
             </div>
 
-            <button style={{fontWeight:"bold", fontSize:"18px", backgroundColor:"rgb(0, 45, 129)", color:"rgb(12, 12, 12)"}} className='btn col-3 p-0' type='submit'>   
+            <button id='buttonSaveTask' className='btn col-3 p-0' type='submit'>   
                 Save task
             </button>
         </form>

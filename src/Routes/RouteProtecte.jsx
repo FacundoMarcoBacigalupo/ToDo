@@ -1,21 +1,9 @@
-import React from 'react'
 import { Navigate, Outlet } from 'react-router-dom'
 
-
-const RouteProtecte = ({
-    user,
-    reditecPath = '/login',
-    children
-}) => {
-
-
+export const RouteProtecte = ({ user, children, reditecPath = '/login' }) => {
     if(!user){
-        return <Navigate to={reditecPath} />
+        return <Navigate to={reditecPath} replace />
     }
 
     return children ? children : <Outlet />
 }
-
-
-
-export default RouteProtecte

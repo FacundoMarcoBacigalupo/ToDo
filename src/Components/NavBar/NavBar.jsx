@@ -1,6 +1,6 @@
 import React from 'react'
-import ToDo  from '../../img/ToDo.png'
 import { Link } from 'react-router-dom'
+import ToDo  from '../../img/ToDo.png'
 import "./navbar.css"
 
 
@@ -23,19 +23,15 @@ const NavBar = () => {
 
 
                 <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav">
-                    <li className="nav-item efect">
-                        <Link to={'/'} className="nav-link text-white-50" aria-current="page">Home</Link>
-                    </li>
+                    <ul className="navbar-nav">
+                        <li className="nav-item efect">
+                            <Link to={'/'} className="nav-link text-white-50" aria-current="page">Home</Link>
+                        </li>
 
-                    <li className="nav-item efect">
-                        <Link to={'/tasks'} className="nav-link text-white-50">Tasks</Link>
-                    </li>
-
-                    <li className="nav-item efect">
-                        <Link to={'/login'} className="nav-link text-white-50">Login</Link>
-                    </li>
-                </ul>
+                        <li className="nav-item efect">
+                            <Link to={'/tasks'} className="nav-link text-white-50">Tasks</Link>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>

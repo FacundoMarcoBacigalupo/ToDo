@@ -5,11 +5,12 @@ import "./Images.css"
 
 
 const Images = () => {
-    const [valor, setValor] = useState('')
+    const [valor, setValor] = useState("")
     const [result, setResult] = useState([])
 
 
-    const searchResult = async()=>{
+
+    const searchResult = async() =>{
         try {
             const APIKey = "9yGMC75xWiOp-fYrPZCQ2xYtFDbFq6ZgltyDRCjC9Uo"
             const URL = `https://api.unsplash.com/search/photos/?client_id=${APIKey}&query=${valor}&per_page=60`;
@@ -17,6 +18,7 @@ const Images = () => {
             const response = await fetch(URL)
             const data = await response.json()
             setResult(data.results)
+            setValor("")
         }
         catch (error) {
             console.log(error.message)
@@ -24,18 +26,25 @@ const Images = () => {
     }
 
 
+
     const handleDowload = (url, nameTheImg) =>{
         saveAs(url, nameTheImg)
     }
 
+    const formCancel = (event) =>{
+        event.preventDefault()
+        searchResult()
+    }
 
 
     return (
         <Fragment>
-            <div style={{textAlign:"center", margin:"auto", marginTop:"20px" ,width:"90%"}}>
-                <input style={{color:"#dddcdc"}} placeholder='Search image' onChange={event => setValor(event.target.value)} />
-                <button style={{margin:"20px", width:"50%"}} onClick={() => searchResult()}>Search</button>
-            </div>
+            <form onClick={(event) => formCancel(event)}>
+                <div style={{textAlign:"center", margin:"auto", marginTop:"20px" ,width:"90%"}}>
+                    <input style={{color:"#dddcdc"}} placeholder='Search image' value={valor} onChange={event => setValor(event.target.value)} />
+                    <button style={{margin:"20px", width:"50%"}} type="submit">Search</button>
+                </div>
+            </form>
 
             <section className="imgContainer">
                 {

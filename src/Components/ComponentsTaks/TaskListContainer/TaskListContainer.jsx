@@ -44,7 +44,7 @@ const TaskListContainer = () => {
 
 
     return (
-        <main>
+        <section>
             <TaskBanner taskItems={taskItems} />
 
             <TaskContainer>
@@ -67,7 +67,7 @@ const TaskListContainer = () => {
                     />
                 )}
             </TaskContainer>
-        </main>
+        </section>
     )
 }
 
