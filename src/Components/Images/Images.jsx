@@ -52,7 +52,7 @@ const Images = () => {
                         return(
                             <div key={index} style={{textAlign:"center"}}>
                                 <img style={{objectFit:"cover"}} src={image.urls.regular} alt='from API' />
-                                <button onClick={() => handleDowload(image.urls.full, image.user.username)} style={{marginTop:"10px", marginBottom:"20px", width:"50%"}}>Dowload</button>
+                                <button onClick={() => handleDowload(image.urls.full, "Imagen from ToDo")} style={{marginTop:"10px", marginBottom:"20px", width:"50%"}}>Dowload</button>
                             </div>
                         )
                     })

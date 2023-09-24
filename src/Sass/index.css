@@ -6,6 +6,9 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scrollbar-width:auto;
+  scrollbar-color: rgb(27, 27, 27) rgb(12, 12, 12);
 }
 
 html {

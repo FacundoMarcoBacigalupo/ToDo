@@ -42,9 +42,7 @@ const TaskVisibilityControl = ({ showCompleted, callback, description, cleanTask
                 <label style={{ fontSize:"18px", fontWeight:"bold", marginTop:"5px"}} htmlFor="form-check-label">Show {description}</label>
             </div>
 
-            <button id='styleClear' className='btn btn-sm' onClick={handleDelete}>
-                Clear
-            </button>
+            <button id='styleClear' className='btn btn-sm' onClick={handleDelete}>Clear</button>
         </section>
     )
 }

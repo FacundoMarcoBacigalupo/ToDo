@@ -1,7 +1,7 @@
-import TaskListContainer from '../Components/ComponentsTaks/TaskListContainer/TaskListContainer'
-import Home from '../Components/Home/Home'
-import NavBar from '../Components/NavBar/NavBar'
-import Footer from '../Components/Footer/Footer';
+import TaskListContainer from '../Components/ComponentsTaks/TaskListContainer/TaskListContainer.jsx'
+import Home from '../Components/Home/Home.jsx'
+import NavBar from '../Components/NavBar/NavBar.jsx'
+import Footer from '../Components/Footer/Footer.jsx';
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 
 
