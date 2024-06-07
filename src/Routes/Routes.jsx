@@ -6,13 +6,12 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom'
 
 
 const Rutes = () => {
-
     return (
         <BrowserRouter>
             <NavBar />
                 <Routes>
                     <Route path='/' element={<Home />} />
-
+                    
                     <Route path='/tasks' element={<TaskListContainer />} />
                 </Routes>
             <Footer />
