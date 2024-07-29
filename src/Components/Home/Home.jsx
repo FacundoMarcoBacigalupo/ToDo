@@ -16,7 +16,6 @@ const Home = () => {
     return (
         <Fragment>
             <Images />
-
             <div className="marquee">
                 <ul className="marquee__content">
                     <li className="marquee__item"><img src={img1}  alt="text algo"/></li>
